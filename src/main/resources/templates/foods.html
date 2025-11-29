@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Search - Diet Maker</title>
+
+    <link rel="stylesheet" href="styles.css">
+    <script src="food-data.js" defer></script>
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body>
+
+<header class="navbar">
+    <div class="logo">🥗 Diet Maker</div>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="foods.html" class="active">Food Search</a>
+    </nav>
+</header>
+
+<section class="search-section">
+    <h2>Search Food Macros</h2>
+
+    <input type="text" id="query" class="search-box"
+           placeholder="Type food name... (e.g., chicken, rice)">
+    
+    <button class="btn-primary" onclick="searchFood()">Search</button>
+
+    <div id="result"></div>
+</section>
+
+<footer>
+    © 2024 Diet Maker — Eat Healthy, Live Healthy 🌱
+</footer>
+
+</body>
+</html>
